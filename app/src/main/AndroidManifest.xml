@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.suivistage">
+    package="com.example.fichestage">
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".etape1Activity"></activity>
+        <activity android:name=".etape2Activity"></activity>
+        <activity android:name=".etape3Activity"></activity>
+        <activity android:name=".etape4Activity"></activity>
+
+
+
     </application>
 
 </manifest>

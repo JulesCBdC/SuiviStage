@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical">
+        android:layout_width="413dp"
+        android:layout_height="559dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,16 +30,16 @@
                 android:layout_height="match_parent" >
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/RadioButtonParticipationOralOUI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Oui" />
+                    android:text="@string/RadioButtonParticipationOralOUI" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/RadioButtonParticipationOralNON"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Non" />
+                    android:text="@string/RadioButtonParticipationOralNON" />
             </RadioGroup>
 
         </LinearLayout>
@@ -59,16 +61,16 @@
                 android:layout_height="match_parent" >
 
                 <RadioButton
-                    android:id="@+id/radioButton6"
+                    android:id="@+id/RadioButtonOpportuniteStageOUI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Oui" />
+                    android:text="@string/RadioButtonOpportuniteStageOUI" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/RadioButtonOpportuniteStageNON"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Non" />
+                    android:text="@string/RadioButtonOpportuniteStageNON" />
             </RadioGroup>
         </LinearLayout>
 
@@ -89,30 +91,49 @@
                 android:layout_height="match_parent" >
 
                 <RadioButton
-                    android:id="@+id/radioButton8"
+                    android:id="@+id/radioButtonMaiJuin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mai - Juin 2019" />
+                    android:text="@string/radioButtonMaiJuin" />
 
                 <RadioButton
-                    android:id="@+id/radioButton7"
+                    android:id="@+id/radioButtonJanvierFevrier"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Janvier - Fevrier 2020" />
+                    android:text="@string/radioButtonJanvierFevrier" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnSuivant4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ajouter la fiche" />
+                android:layout_weight="1"
+                android:text="@string/btnSuivant4" />
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
